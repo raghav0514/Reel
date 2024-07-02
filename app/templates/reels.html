@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Reels</h2>
+<ul>
+    {% for reel in reels %}
+    <li>
+        <h3>{{ reel.title }}</h3>
+        <video width="320" height="240" controls>
+            <source src="{{ url_for('static', filename='videos/' ~ reel.filename) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
