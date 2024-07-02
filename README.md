@@ -1,4 +1,7 @@
 if any migrations delete the migrations file from project re create by this cmds and clear the database cmds and keep it empty 
+
+
+
 cmd make your dir change to the download project
 pip install Flask-Migrate
 flask db init
